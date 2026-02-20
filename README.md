@@ -17,7 +17,7 @@ Power BI • SQL • Python • ETL • Data Modeling (Star Schema)
 - **Deliverables:** data model, SQL scripts, notebook, dashboard screenshots
 - Link: `Projects/churn-retention-end-to-end/`
 
-### 2) Sales KPI Executive Dashboard (Power BI)
+### 2) Sales Performance Executive Dashboard (Power BI)
 - **Goal:** Revenue, margin, YoY trends, top products, regional performance
 - **Stack:** Power BI • DAX • Data Modeling
 - Link: `Projects/sales-kpi-powerbi/`
