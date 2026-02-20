@@ -34,10 +34,11 @@ Details and cleaning steps: `data/data_source.md`
 4. Trends & Drivers — YoY trends + order vs AOV decomposition + drivers
 
 ## Preview
-![Executive Overview](assets/01_executive_Overview.png)
-![Customer Behavior](assets/02_customer_behavior.png)
-![Product Performance](assets/03_product_performance.png)
-![Trends & Drivers](assets/04_trends.png)
+## Screenshots
+![Executive Overview](assets/screenshots/executive_Overview.png)
+![Customer Behavior](assets/screenshots/customer_behavior.png)
+![Product Performance](assets/screenshots/product_performance.png)
+![Trends](assets/screenshots/trends.png)
 
 ## Files
 - DAX measures: `powerbi/dax_measures.md`
