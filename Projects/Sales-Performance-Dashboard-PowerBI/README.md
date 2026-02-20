@@ -1,48 +1,58 @@
-# Sales Performance Dashboard (Power BI) — Online Retail
+# Sales Performance Dashboard (Power BI)
 
-## Goal
-Build an executive dashboard to track revenue performance and explain growth drivers using a real transactional dataset.
+**Focus:** BI / Data Analytics (Power BI, DAX, Power Query)  
+**Goal:** Build an executive-ready sales dashboard from raw transactional data.
 
-## Business Questions
-- How is revenue trending over time (smoothed vs actual)?
-- Is growth driven by more orders or higher order value (AOV)?
-- Which countries/products/customers are driving revenue changes?
+## What this dashboard answers
+- Total Revenue, Total Orders, Total Customers, AOV
+- Monthly revenue trend
+- Top customers by revenue
+- Top products by revenue and quantity
+- MoM% and YoY% performance trends
 
 ## Dataset
-Online Retail dataset (UCI Machine Learning Repository).  
-Details and cleaning steps: `data/data_source.md`
+Public transactional dataset (Online Retail / Online Retail II).  
+See: `Data/data_source.md`
 
-## Data Preparation (Power Query)
-- Removed cancellations (InvoiceNo starting with "C")
-- Filtered Quantity > 0 and UnitPrice > 0
-- Removed null CustomerID rows
-- Added Revenue column
+## Key work I did
+- Cleaned cancellations/returns and invalid values in **Power Query**
+- Created a proper **Date table** and relationship for time intelligence
+- Built **DAX KPI measures** (Revenue, Orders, Customers, AOV, MoM%, YoY%)
+- Designed a multi-page dashboard (Executive → Customer → Product → Trends)
 
-## Modeling
-- Date table for time intelligence (YoY/MoM)
-- Relationship: Online Retail[InvoiceDate_Date] → Date[Date]
+## How to reproduce
+1) Download dataset (see `Data/data_source.md`)
+2) Apply Power Query steps (`Powerbi/power_query_steps.md`)
+3) Build model + Date table (`Powerbi/model_notes.md`)
+4) Create DAX measures (`Powerbi/dax_measures.md`)
+5) Build visuals using the spec below
 
-## KPIs
-- Total Revenue, Total Orders, Total Customers, AOV
-- YoY Revenue %, YoY Orders %, YoY AOV %
-- Revenue 3M Rolling, Revenue Change YoY
+## Dashboard pages (spec)
+**Page 1 — Executive Overview**
+- Cards: Total Revenue, Total Orders, Total Customers, AOV
+- Line: Revenue by Month
+- Bar: Revenue by Country (Top 10)
 
-## Dashboard Pages
-1. Executive Overview — KPIs, revenue trend, country revenue
-2. Customer Behavior — top customers + customer trend
-3. Product Performance — top products by revenue and volume
-4. Trends & Drivers — YoY trends + order vs AOV decomposition + drivers
+**Page 2 — Customer Behavior**
+- Bar: Top 10 Customers by Revenue
+- Line: Total Customers by Month
+- Table: CustomerID + Revenue + Orders + AOV (Top 20)
 
-## Preview
+**Page 3 — Product Performance**
+- Bar: Top 10 Products by Revenue
+- Bar: Top 10 Products by Items Sold
+
+**Page 4 — Trends**
+- Line: MoM Revenue %
+- Line: YoY Revenue %
+- Line: Rolling 3M Revenue (optional)
+
 ## Screenshots
-![Executive Overview](assets/screenshots/executive_Overview.png)
+![Executive Overview](assets/screenshots/executive_overview.png)
 ![Customer Behavior](assets/screenshots/customer_behavior.png)
 ![Product Performance](assets/screenshots/product_performance.png)
 ![Trends](assets/screenshots/trends.png)
+![Model View](assets/screenshots/model_view.png)
 
-## Files
-- DAX measures: `powerbi/dax_measures.md`
-- Data source + cleaning: `data/data_source.md`
-
-## Credits
-Dataset: Online Retail, UCI Machine Learning Repository (CC BY 4.0).
+## SQL validation (optional)
+See: `SQL/kpi_queries.sql`
