@@ -1,15 +1,24 @@
-# Data Source
+# Data Source & Assumptions
 
-**Dataset:** Online Retail (UCI Machine Learning Repository)  
-**File:** Online Retail.xlsx (not stored in this repo)  
-**License:** CC BY 4.0 (attribution)
+## Dataset
+Online Retail (UCI) / Online Retail II (public mirrors exist).
 
-## Cleaning Rules (Power Query)
-- Removed cancellations: InvoiceNo not starting with "C"
-- Filtered Quantity > 0 and UnitPrice > 0
-- Removed null CustomerID rows
-- Created Revenue = Quantity * UnitPrice
+## Why this dataset
+- Real invoice line-item transactions
+- Supports KPI, customer, and product analysis
+- Includes cancellations/returns → strong cleaning story
 
-## Model
-- Date table created and marked as Date table
-- Relationship: Online Retail[InvoiceDate_Date] → Date[Date]
+## Cleaning rules used (important)
+1) Remove cancellations: `InvoiceNo` starting with **"C"**
+2) Remove invalid sales:
+   - `Quantity` > 0
+   - `UnitPrice` > 0
+3) Remove missing customers (recommended for customer analytics):
+   - `CustomerID` is not null
+4) Create `Revenue` = `Quantity * UnitPrice`
+
+## Key columns
+- InvoiceNo, InvoiceDate
+- StockCode, Description
+- Quantity, UnitPrice
+- CustomerID, Country
