@@ -48,11 +48,6 @@ See: `Data/data_source.md`
 - Line: Rolling 3M Revenue (optional)
 
 ## Screenshots
-![Executive Overview](assets/screenshots/executive_overview.png)
-![Customer Behavior](assets/screenshots/customer_behavior.png)
-![Product Performance](assets/screenshots/product_performance.png)
-![Trends](assets/screenshots/trends.png)
-![Model View](assets/screenshots/model_view.png)
 
 ## SQL validation (optional)
 See: `SQL/kpi_queries.sql`
