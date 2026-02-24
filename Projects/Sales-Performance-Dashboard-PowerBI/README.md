@@ -75,7 +75,6 @@ Full DAX list:
 ![Customer Behavior](assets/screenshots/customer_behavior.png)
 ![Product Performance](assets/screenshots/product_performance.png)
 ![Trends](assets/screenshots/trends.png)
-![Model View](assets/screenshots/model_view.png)
 
 ## SQL Validation
 Basic SQL KPI validation queries are included here:  
