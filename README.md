@@ -11,11 +11,10 @@ Power BI • SQL • Python • ETL • Data Modeling (Star Schema)
 
 > These are end-to-end projects with dataset links, documented steps, and dashboards.
 
-### 1) Customer Churn & Retention Analytics (End-to-End)
-- **Goal:** Identify churn drivers and build a retention dashboard + model
-- **Stack:** SQL • Python • Power BI • Star Schema
-- **Deliverables:** data model, SQL scripts, notebook, dashboard screenshots
-- Link: `Projects/churn-retention-end-to-end/`
+### 1) ### 2) SQL Analytics Case Study
+Built a SQL-based business analysis project using the same Online Retail dataset to validate KPIs, analyze customer and product performance, and identify revenue trends.
+
+**Project:** `Projects/SQL-Analytics-Case-Study/`
 
 ### 2) Sales Performance Executive Dashboard (Power BI)
 - **Goal:** Revenue, margin, YoY trends, top products, regional performance
