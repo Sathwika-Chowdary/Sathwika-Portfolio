@@ -1,5 +1,9 @@
 -- SQL Analytics Case Study
 -- Dataset: Online Retail
+-- Cleaning logic:
+--   1) Exclude cancellations (InvoiceNo NOT LIKE 'C%')
+--   2) Keep valid sales only (Quantity > 0, UnitPrice > 0)
+--   3) Exclude null customers (CustomerID IS NOT NULL)
 
 ----------------------------------------------------
 -- 1) Monthly Revenue Trend
@@ -71,3 +75,17 @@ WHERE InvoiceNo NOT LIKE 'C%'
   AND CustomerID IS NOT NULL
 GROUP BY Country
 ORDER BY CountryRevenue DESC;
+
+----------------------------------------------------
+-- 6) Order Count by Country
+----------------------------------------------------
+SELECT
+    Country,
+    COUNT(DISTINCT InvoiceNo) AS TotalOrders
+FROM online_retail
+WHERE InvoiceNo NOT LIKE 'C%'
+  AND Quantity > 0
+  AND UnitPrice > 0
+  AND CustomerID IS NOT NULL
+GROUP BY Country
+ORDER BY TotalOrders DESC;
