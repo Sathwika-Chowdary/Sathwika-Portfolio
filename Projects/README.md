@@ -9,3 +9,8 @@ This project includes:
 - Monthly and yearly trend reporting
 
 **Project:** `Projects/Sales-Performance-Dashboard-PowerBI/`
+
+### 2) SQL Analytics Case Study
+- Stack: SQL
+- Status: Completed
+- Folder: `SQL-Analytics-Case-Study/`
