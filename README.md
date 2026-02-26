@@ -25,12 +25,11 @@ Skills demonstrated:
 - Time-intelligence reporting (MoM / YoY)
 - Dashboard design
 
-**Project:** `Projects/Sales-Performance-Dashboard-PowerBI/`
-
+**Project:** **Project:** - Link: [Sales Performance Dashboard](Projects/Sales-Performance-Dashboard-PowerBI/)
 ### 2) SQL Analytics Case Study
 Built a SQL-based business analysis project using the same Online Retail dataset to validate KPIs, analyze customer and product performance, and identify revenue trends.
 
-**Project:** `Projects/SQL-Analytics-Case-Study/`
+**Project:** **Project:** [SQL Analytics Case Study](Projects/SQL-Analytics-Case-Study/)
 
 ### 3) ETL Pipeline + Data Quality Checks
 - **Goal:** Build a small ETL pipeline + validation checks + logging
