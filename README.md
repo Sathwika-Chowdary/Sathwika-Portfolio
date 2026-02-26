@@ -11,15 +11,26 @@ Power BI • SQL • Python • ETL • Data Modeling (Star Schema)
 
 > These are end-to-end projects with dataset links, documented steps, and dashboards.
 
-### 1) ### 2) SQL Analytics Case Study
+# Sathwika Portfolio
+
+Business Intelligence and Data Analytics portfolio focused on **Power BI, SQL, Python, and ETL**.
+
+## Featured Projects
+
+### 1) Sales Performance Dashboard (Power BI)
+Built an end-to-end sales analytics dashboard using a public retail transactions dataset.  
+Skills demonstrated:
+- Power Query cleaning
+- DAX KPI creation
+- Time-intelligence reporting (MoM / YoY)
+- Dashboard design
+
+**Project:** `Projects/Sales-Performance-Dashboard-PowerBI/`
+
+### 2) SQL Analytics Case Study
 Built a SQL-based business analysis project using the same Online Retail dataset to validate KPIs, analyze customer and product performance, and identify revenue trends.
 
 **Project:** `Projects/SQL-Analytics-Case-Study/`
-
-### 2) Sales Performance Executive Dashboard (Power BI)
-- **Goal:** Revenue, margin, YoY trends, top products, regional performance
-- **Stack:** Power BI • DAX • Data Modeling
-- Link: `Projects/sales-kpi-powerbi/`
 
 ### 3) ETL Pipeline + Data Quality Checks
 - **Goal:** Build a small ETL pipeline + validation checks + logging
