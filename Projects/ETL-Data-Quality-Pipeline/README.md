@@ -54,3 +54,31 @@ Insert the cleaned records into a reporting-ready target table.
 
 ## Why this project matters
 This project complements the SQL Analytics Case Study and Sales Performance Dashboard by showing the data preparation and validation layer behind the analytics workflow.
+
+## Validation Summary
+
+The ETL validation checks confirm that the raw transactional dataset requires filtering before it can be safely used for reporting.
+
+The quality checks verify:
+
+- Total raw row count before transformation
+- Number of cancellation rows
+- Number of rows with invalid quantity values
+- Number of rows with invalid unit prices
+- Number of rows with missing customer IDs
+- Number of rows that remain after applying all quality filters
+- Revenue total based only on clean, valid rows
+
+## Why this matters
+These checks ensure that downstream analytics and dashboards are based on clean and consistent business data rather than raw, unvalidated source records.
+
+## Example Validation Outputs
+(Optional but recommended)
+Add screenshots or summary tables showing:
+- RawRowCount
+- CancellationRows
+- InvalidQuantityRows
+- InvalidUnitPriceRows
+- NullCustomerRows
+- ValidRows
+- ValidRevenue
