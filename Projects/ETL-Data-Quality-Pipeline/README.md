@@ -1,49 +1,56 @@
 # ETL Data Quality Pipeline
 
 ## Overview
-This project documents a simple ETL-style data pipeline with built-in data quality checks for transactional retail data.
+This project demonstrates a simple ETL-style workflow for preparing raw transactional retail data for downstream analytics and reporting.
 
-It is designed to show practical understanding of:
-- Extract → Transform → Load workflow
-- Data validation and quality controls
-- Reusable business rules for clean reporting data
+It focuses on:
+- Extract → Transform → Load logic
+- Data cleaning rules
+- Data quality validation checks
+- Preparing clean, reporting-ready data
 
 ## Business Goal
-Prepare raw transaction data for downstream analytics by:
-- removing invalid or cancelled records
-- standardizing data fields
-- validating core quality rules
-- producing a clean dataset ready for BI and SQL analysis
+Take raw retail transactions and convert them into a clean dataset that can be safely used for:
+- Power BI reporting
+- SQL analytics
+- KPI validation
+- customer and product analysis
 
-## Pipeline Stages
-1. **Extract**
-   - Load raw retail transaction data
+## Dataset
+This project uses the same public retail dataset used across the portfolio:
+- Online Retail (UCI) / Online Retail II
 
-2. **Transform**
-   - Remove cancellations
-   - Filter invalid values
-   - Standardize types
-   - Derive revenue field
+Dataset notes: `Data/data_source.md`
 
-3. **Validate**
-   - Check for nulls in required fields
-   - Check for negative or zero values
-   - Check duplicate transaction patterns
-   - Confirm row counts before/after cleaning
+## ETL Flow
 
-4. **Load**
-   - Output cleaned dataset for reporting / analysis use
+### 1) Extract
+Load the raw transaction data from the source dataset.
 
-## Data Quality Rules
-- `InvoiceNo` must not start with `C`
-- `Quantity > 0`
-- `UnitPrice > 0`
-- `CustomerID` should not be null for customer-level analytics
-- `Revenue = Quantity * UnitPrice`
+### 2) Transform
+Apply core business rules:
+- Remove cancellations (`InvoiceNo` starting with "C")
+- Keep only valid sales (`Quantity > 0`, `UnitPrice > 0`)
+- Remove null `CustomerID` for customer-level analysis
+- Create `Revenue = Quantity * UnitPrice`
+
+### 3) Validate
+Run data quality checks:
+- Count raw rows
+- Count cancellation rows
+- Count invalid quantity rows
+- Count invalid price rows
+- Count null customer rows
+- Count valid rows after filters
+- Validate revenue on clean rows
+
+### 4) Load
+Insert the cleaned records into a reporting-ready target table.
 
 ## Project Files
-- Pipeline rules and steps will be documented in this folder
-- SQL quality checks and ETL notes will be added next
+- Data notes: `Data/data_source.md`
+- Quality checks: `SQL/etl_quality_checks.sql`
+- ETL pipeline logic: `SQL/etl_pipeline_steps.sql`
 
-## Notes
-This project complements the Power BI dashboard and SQL case study by showing the data engineering / data quality side of the same analytics workflow.
+## Why this project matters
+This project complements the SQL Analytics Case Study and Sales Performance Dashboard by showing the data preparation and validation layer behind the analytics workflow.
