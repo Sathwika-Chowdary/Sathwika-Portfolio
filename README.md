@@ -31,11 +31,10 @@ Built a SQL-based business analysis project using the same Online Retail dataset
 
 **Project:** **Project:** [SQL Analytics Case Study](Projects/SQL-Analytics-Case-Study/)
 
-### 3) ETL Pipeline + Data Quality Checks
-- **Goal:** Build a small ETL pipeline + validation checks + logging
-- **Stack:** Python • SQL • ETL
-- Link: `Projects/etl-pipeline-quality-checks/`
-
+### ### 3) ETL Data Quality Pipeline
+- Stack: SQL / ETL / Data Quality
+- Status: Completed
+- Folder: `ETL-Data-Quality-Pipeline/`
 ---
 
 ## Skills Snapshot
