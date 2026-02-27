@@ -35,6 +35,7 @@ Built a SQL-based business analysis project using the same Online Retail dataset
 - Stack: SQL / ETL / Data Quality
 - Status: Completed
 - Folder: `ETL-Data-Quality-Pipeline/`
+**Project:** **Project:** - Link: [ETL Data Quality Pipeline](Projects/ETL-Data-Quality-Pipeline/)
 ---
 
 ## Skills Snapshot
