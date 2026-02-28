@@ -56,6 +56,12 @@ The SQL analysis produced the following business insights:
 
 - Country-level analysis shows which geographic markets contribute the highest revenue and order volume.
 
-## Example Output Snapshots
-(Optional but recommended)
-Add screenshots of SQL query results in an `assets/` folder and link them here later.
+## Example Output Table
+
+| Analysis Area | Example Insight |
+|---|---|
+| KPI Validation | Total Revenue, Total Orders, Total Customers, and AOV can be calculated directly from the cleaned transaction table. |
+| Monthly Trend | Revenue can be grouped by year and month to track sales variation over time. |
+| Customer Analysis | Top customers can be ranked by total revenue contribution. |
+| Product Analysis | Products can be ranked by both revenue generated and total quantity sold. |
+| Country Analysis | Revenue and order counts can be compared across countries to identify the strongest markets. |
