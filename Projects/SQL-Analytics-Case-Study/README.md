@@ -35,3 +35,27 @@ The SQL queries apply the same cleaning assumptions used in the Power BI project
 
 ## Notes
 This project complements the Power BI dashboard project by showing the SQL logic behind the same business metrics.
+
+## Results Summary
+
+The SQL analysis produced the following business insights:
+
+- Core KPIs can be validated directly from the cleaned transaction table:
+  - Total Revenue
+  - Total Orders
+  - Total Customers
+  - Average Order Value (AOV)
+
+- Monthly revenue trends can be grouped by year and month to show seasonality and sales variation over time.
+
+- Customer-level analysis identifies the highest-value customers based on total revenue contribution.
+
+- Product-level analysis highlights:
+  - top products by total revenue
+  - top products by total quantity sold
+
+- Country-level analysis shows which geographic markets contribute the highest revenue and order volume.
+
+## Example Output Snapshots
+(Optional but recommended)
+Add screenshots of SQL query results in an `assets/` folder and link them here later.
