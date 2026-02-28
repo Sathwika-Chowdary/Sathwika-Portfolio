@@ -72,14 +72,14 @@ The quality checks verify:
 ## Why this matters
 These checks ensure that downstream analytics and dashboards are based on clean and consistent business data rather than raw, unvalidated source records.
 
-## Example Validation Outputs
-(Optional but recommended)
-Add screenshots or summary tables showing:
-- RawRowCount
-- CancellationRows
-- InvalidQuantityRows
-- InvalidUnitPriceRows
-- NullCustomerRows
-- ValidRows
-- ValidRevenue
+## Example Validation Output Table
 
+| Check | Purpose |
+|---|---|
+| RawRowCount | Counts all rows in the raw source table before transformation. |
+| CancellationRows | Counts rows where `InvoiceNo` indicates cancelled transactions. |
+| InvalidQuantityRows | Counts rows where `Quantity <= 0`. |
+| InvalidUnitPriceRows | Counts rows where `UnitPrice <= 0`. |
+| NullCustomerRows | Counts rows with missing `CustomerID`. |
+| ValidRows | Counts rows that pass all quality rules. |
+| ValidRevenue | Calculates revenue only from clean, valid rows. |
