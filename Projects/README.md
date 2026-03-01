@@ -1,6 +1,6 @@
 ## Featured Projects
 
-### 1) Sales Performance Dashboard (Power BI)
+### Sales Performance Dashboard (Power BI)
 Built an end-to-end sales analytics dashboard using Power BI and a public retail dataset.  
 This project includes:
 - Data cleaning and preparation in Power Query
@@ -10,7 +10,12 @@ This project includes:
 
 **Project:** `Projects/Sales-Performance-Dashboard-PowerBI/`
 
-### 2) SQL Analytics Case Study
+###  SQL Analytics Case Study
 - Stack: SQL
 - Status: Completed
 - Folder: `SQL-Analytics-Case-Study/`
+
+- ###  Customer Churn Analysis & Reporting
+- Stack: SQL / Reporting / Customer Analytics
+- Status: Completed
+- Folder: `Customer-Churn-Analysis-Reporting/`
