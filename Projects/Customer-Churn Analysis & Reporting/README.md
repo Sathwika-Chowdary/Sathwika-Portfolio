@@ -18,6 +18,3 @@ IBM Telco Customer Churn sample dataset.
 - KPI and segment-level reporting
 - Dashboard-ready business insights
 - Screenshots / outputs to be added after analysis
-
-## Why this project matters
-This project strengthens the portfolio by adding a customer analytics and retention-focused case study, complementing the sales, SQL, and ETL projects already included.
