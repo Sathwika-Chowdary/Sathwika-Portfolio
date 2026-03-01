@@ -36,6 +36,11 @@ Built a SQL-based business analysis project using the same Online Retail dataset
 - Status: Completed
 - Folder: `ETL-Data-Quality-Pipeline/`
 **Project:** **Project:** - Link: [ETL Data Quality Pipeline](Projects/ETL-Data-Quality-Pipeline/)
+
+  ### 4) Customer Churn Analysis & Reporting
+Built a churn-focused customer analytics case study using a public telco dataset to analyze churn rate, contract risk, payment behavior, tenure trends, and customer retention patterns.
+
+**Project:** **Project:** [Customer Churn Analysis & Reporting](Projects/Customer-Churn-Analysis-Reporting/)
 ---
 
 ## Skills Snapshot
