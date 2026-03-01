@@ -40,5 +40,22 @@ This project includes:
 - Segment-level churn analysis
 - Customer value / risk indicators
 
-## Why this project matters
-This project adds a customer retention and churn-focused business case study to the portfolio, complementing the sales analytics, SQL analytics, and ETL projects.
+## Results Summary
+
+The churn analysis supports the following business insights:
+
+- The overall churn rate can be measured directly from the `Churn` field.
+- Contract type is a key churn driver, especially when comparing month-to-month customers against longer-term contracts.
+- Payment method patterns can reveal higher-risk customer groups.
+- Customers who churn often differ in average tenure and monthly charges compared with retained customers.
+- Segment-level churn reporting helps identify where retention strategies should be focused.
+
+## Example Output Table
+
+| Analysis Area | Example Insight |
+|---|---|
+| Overall Churn | Churn rate can be calculated as the percentage of customers with `Churn = 'Yes'`. |
+| Contract Analysis | Month-to-month contracts are typically more churn-prone than long-term contracts. |
+| Payment Analysis | Certain payment methods may show higher churn concentration. |
+| Tenure Analysis | Lower-tenure customers are often more likely to churn. |
+| Charge Analysis | Monthly charges can be compared between churned and retained groups. |
